@@ -16,26 +16,26 @@
 
 ## Procedure
 
-Power On:
+ **Power On:**
      -	Servo remains detached (no movement on startup).
      -	Arduino loads previous calibration and servo limit values from EEPROM.
-Load Configuration:
+ **Load Configuration:**
      -	Retrieve FSR calibration constants (M, B) and servo endpoint limits (OPEN/CLOSE µs).
-Sensor Reading:
+ **Sensor Reading:**
      -	Continuously read force from Left (A0) and Right (A1) FSRs.
      -	Convert analog readings to Force (N) using calibration data.
      -	If total force exceeds predefined maximum → block servo closing.
-Servo Activation (ARM):
+ **Servo Activation (ARM):**
      -	Attach servo to enable motion.
      -	Manually adjust servo pulse width to control jaw opening/clamping.
      -	LCD displays real-time values:
              o	Total Force (N)
              o	Current servo pulse (µs)
              o	System status (ARM / DISARM)
-Data Recording:
+ **Data Recording:**
      -	Record readings for each test object and jaw type.
      -	Include parameters such as object ID, pulse (µs), forces (N), slip, and surface marks.
-Iteration:
+ **Iteration:**
      -	Replace current jaw type (Gecko / Soft / Hard).
      -	Repeat measurement and recording for each configuration.
      -	Compare performance results across jaw types.
@@ -46,3 +46,4 @@ Iteration:
      Michael George - M00979224
      Supervisor: Dr. Judhi Prasetyo
      MSc Robotics, Middlesex University Dubai  
+
