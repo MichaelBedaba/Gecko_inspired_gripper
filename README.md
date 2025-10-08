@@ -40,10 +40,9 @@
      -	Repeat measurement and recording for each configuration.
      -	Compare performance results across jaw types.
 
-
-
 ## By:
      Michael George - M00979224
      Supervisor: Dr. Judhi Prasetyo
      MSc Robotics, Middlesex University Dubai  
+
 
